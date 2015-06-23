@@ -10,10 +10,11 @@
 @yellow     : #F1E9A4;
 @brown      : #AC9A8D;
 @green      : #82C87B;
-@dark-purple: #A996C1;
+@purple-dark: #A996C1;
 @purple     : #C5C0E4;
 @gray       : #9EA7A5;
 @pink       : #DCAFDD;
+@orange     : #EAAE81;
 
 // Common colors
 @white: #f0f0f0;
@@ -33,52 +34,52 @@
 @global-hover     : lighten(@global-background, 5%);
 @global-input     : #111;
 // @global-selected  : #364c3b;
-@global-selected  : #2A2A2A;
+@global-selected  : #333;
 @global-text      : #D7D7D7;
-@global-label     : #00edff;
-@global-warn      : #db0;
-@global-error     : #ff5a5a;
+@global-label     : @purple;
+@global-warn      : @orange;
+@global-error     : @red;
 @global-textshadow: darken(@global-background, 4%);
 
 // JavaScript
 @js-atom      : @pink;
-@js-attribute : #4e87bf;
-@js-builtin   : #8da6ce;
+@js-attribute : @blue;
+@js-builtin   : @pink;
 @js-comment   : @green;
 @js-def       : @global-text;
-@js-error     : #f8f8f8;
-@js-header    : #DDD;
+@js-error     : @red;
+@js-header    : @green;
 @js-hr        : #aeaeae;
 @js-keyword   : @red;
-@js-link      : #00edff;
-@js-meta      : #d8fa3c;
+@js-link      : @gray;
+@js-meta      : purple;
 @js-number    : @global-text;
-@js-operator  : @dark-purple;
+@js-operator  : @purple-dark;
 @js-property  : @global-text;
 @js-string    : @yellow;
-@js-tag       : #49a6d2;
+@js-tag       : yellow;
 @js-variable  : @global-text;
 @js-variable-2: @global-text;
 
 // JavaScript Objects
 @js-obj-array    : #7c7c7c;
-@js-obj-boolean  : #89f5a2;
-@js-obj-function : #8b6ccf;
-@js-obj-name     : #77a8c6;
-@js-obj-number   : #89f5a2;
-@js-obj-preview  : #ddd;
-@js-obj-regexp   : #ff54e8;
-@js-obj-string   : #ff8737;
-@js-obj-undefined: #ad4e4e;
+@js-obj-boolean  : @pink;
+@js-obj-function : @global-text;
+@js-obj-name     : @brown;
+@js-obj-number   : @global-text;
+@js-obj-preview  : @global-text;
+@js-obj-regexp   : @yellow;
+@js-obj-string   : @yellow;
+@js-obj-undefined: @pink;
 
 // CSS
-@css-at-rule   : #b094bb;
+@css-at-rule   : @purple;
 @css-atom      : #ccc;
 @css-builtin   : @blue;
 @css-comment   : @green;
 @css-def       : @blue;
 @css-important : @red;
-@css-meta      : #6aedff;
+@css-meta      : orange;
 @css-number    : #ccc;
 @css-operator  : #ccc;
 @css-property  : @purple;
@@ -94,13 +95,13 @@
 @xml-comment           : @green;
 @xml-error             : @red;
 @xml-iframe-root       : #db0;
-@xml-js-node           : blue;
+@xml-js-node           : @global-text;
 @xml-link              : @gray;
 @xml-pseudo            : @blue;
 @xml-pseudo-highlighted: @blue;
-@xml-shadow-root       : @dark-purple;
+@xml-shadow-root       : @purple-dark;
 @xml-string            : @yellow;
-@xml-tag               : #D7D7D7;
+@xml-tag               : @global-text;
 @xml-tag-name          : @pink;
 
 // Tabbed Header Configuration
@@ -146,11 +147,11 @@
 // Editor Properties
 @cm-cursor             : #fff;
 @cm-error              : #9D1E15;
-@cm-gutter             : lighten(@global-background, 4%);
-@cm-gutter-border      : lighten(@global-background, 5%);
+@cm-gutter             : lighten(@global-background, 15%);
+@cm-gutter-border      : lighten(@global-background, 35%);
 @cm-gutter-lines       : lighten(@global-background, 40%);
-@cm-matching-bracket   : #15ca1a;
-@cm-nonmatching-bracket: #db0404;
+@cm-matching-bracket   : @blue;
+@cm-nonmatching-bracket: @red;
 @cm-lines-no-sourcemap : lighten(@global-background, 1%);
 @cm-selected           : lighten(@global-background, 10%);
 @cm-whitespace         : lighten(@global-background, 5%);
@@ -178,10 +179,10 @@
 @filter-selected     : lighten(@global-background, 15%);
 @filter-selected-text: lighten(@global-text, 15%);
 @filter-error        : @global-error;
-@filter-warning      : #db0;
-@filter-info         : #A277FF;
-@filter-log          : #49a6d2;
-@filter-debug        : #FC844C;
+@filter-warning      : @orange;
+@filter-info         : @blue;
+@filter-log          : @global-text;
+@filter-debug        : @gray;
 
 // Find
 @find-header-background   : lighten(@global-background, 3%);
@@ -253,7 +254,8 @@
 @timeline-graph-selection     : @global-accent;
 @timeline-progress-pane       : fade(lighten(@global-background,30%), 50%);
 @timeline-resources-divider   : lighten(@global-background, 3%);
-
+@timeline-content-loaded-event: @blue;
+@timeline-load-event          : @red;
 
 
 // Popovers

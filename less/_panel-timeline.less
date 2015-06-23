@@ -225,3 +225,23 @@
 	background-color: @timeline-progress-pane !important;
 	color: @global-text !important;
 }
+
+// DOMContentLoaded and Load indicators
+.network-summary-bar {
+  .summary-blue {
+    color: @timeline-content-loaded-event !important;
+  }
+  .summary-red {
+    color: @timeline-load-event !important;
+  }
+}
+.resources-event-dividers {
+  // Not sure what this is. TODO: figure it out
+  // .network-orange-divider: @timeline-event-orange {}
+  .network-blue-divider {
+    background-color: @timeline-content-loaded-event;
+  }
+  .network-red-divider {
+    background-color: @timeline-load-event;
+  }
+} 
