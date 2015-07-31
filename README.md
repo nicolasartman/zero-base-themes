@@ -1,3 +1,14 @@
+# All Night Chrome Devtools Theme
+
+This is a dark theme designed to reduce eye fatigue and allow easy focusing whether you're developing all day or [all day and] all night.
+
+It's based on the excellent Zero Base Themes, the README for which is maintained below. Follow those instructions (but clone this repo in step one) to get set up.
+
+Step 4 is a bit unclear—the easiest way to install is to build open the extensions window and drag the "theme-extension" folder (that was built when you ran `grunt`) over it.
+
+
+--------------
+
 # Notice
 Experiments settings reset in `44.0.2403.89`. Open developer tools settings &#9654; Experiments &#9654; [&#10004;] Allow custom UI themes to enable theme again.
 
